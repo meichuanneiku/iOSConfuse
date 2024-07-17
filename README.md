@@ -25,4 +25,6 @@
 示例项目：框架使用Demo。
 
 ## 3. safeConfuseAndBuild.sh
-这是iOS代码混淆及编译的自动化脚本，支持swift、m、c、cpp和h文件类型的混淆，使用编译时混淆的策略，不影响源码阅读，只需在想要混淆的函数名或者变量名前加个private_即可，可通过函数实现安全混淆、去混淆、混淆再编译。
+修改CONFUSE_PREFIX的值为要被混淆的文件的前缀；例如：PrivateXXXXXX.swift，那CONFUSE_PREFIX=Private
+直接在终端cd到confuseAndBuild.sh的目录，然后运行sh confuseAndBuild.sh -c 即可
+这是iOS代码混淆及编译的自动化脚本，支持swift、m、c、cpp和h文件类型的混淆，使用编译时混淆的策略，不影响源码阅读，可通过函数实现安全混淆、去混淆、混淆再编译。
